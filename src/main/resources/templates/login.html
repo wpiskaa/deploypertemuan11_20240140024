@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pertemuan 11</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Login</h2>
+            <div th:if="${param.error}" class="alert alert-error">
+                Username atau password salah.
+            </div>
+            <div th:if="${param.logout}" class="alert alert-success">
+                Berhasil logout.
+            </div>
+            <form th:action="@{/login}" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="link-text">Belum punya akun? <a th:href="@{/register}">Daftar di sini</a></p>
+        </div>
+    </div>
+</body>
+</html>

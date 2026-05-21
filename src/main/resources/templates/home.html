@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pertemuan 11</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-brand">Pertemuan 11</span>
+        <form th:action="@{/logout}" method="post" style="display:inline;">
+            <button type="submit" class="btn btn-logout">Logout</button>
+        </form>
+    </nav>
+
+    <div class="container">
+        <div class="card profile-card">
+            <h2>Selamat Datang!</h2>
+            <div class="profile-info">
+                <div class="info-item">
+                    <span class="info-label">Username</span>
+                    <span class="info-value" th:text="${user.username}">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Nama</span>
+                    <span class="info-value" th:text="${profile.nama}">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Alamat</span>
+                    <span class="info-value" th:text="${profile.alamat}">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
