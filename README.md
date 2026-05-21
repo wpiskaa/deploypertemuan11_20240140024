@@ -157,7 +157,7 @@ docker-compose up --build -d
 
 | | |
 |---|---|
-| **Nama** | *(Nama kamu)* |
+| **Nama** | Hafizz Kurniawan |
 | **NIM** | 20240140024 |
 | **Mata Kuliah** | Software Deployment |
 | **Pertemuan** | 11 |
