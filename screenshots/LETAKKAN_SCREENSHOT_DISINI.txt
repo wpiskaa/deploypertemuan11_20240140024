@@ -1,0 +1,9 @@
+Letakkan screenshot kamu di folder ini sesuai nama file di README.md:
+
+- running_wsl.png      → Screenshot running app di WSL
+- docker_compose.png   → Screenshot isi docker-compose.yml di terminal
+- tabel_users.png      → Screenshot isi tabel users di database
+- tabel_profile.png    → Screenshot isi tabel profile di database
+- register.png         → Screenshot halaman Register
+- login.png            → Screenshot halaman Login
+- home.png             → Screenshot halaman Home
